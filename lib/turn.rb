@@ -4,9 +4,16 @@ def turn(board)
   user_input = input_to_index(user_input)
   
   if valid_move?(board, user_input)
+<<<<<<< HEAD
     move(board, user_input, "X")
     display_board(board)
   else turn(board)
+=======
+    return move(board, user_input, "X")
+    display_board
+  else valid_move?(board, user_input) != gets 
+    puts "Please enter 1-9:"
+>>>>>>> 270c68a4c3236fa0a1a519918766497346a6bc11
  end 
 end 
 
